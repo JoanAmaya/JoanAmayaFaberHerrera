@@ -36,9 +36,7 @@ class Particle3d():
         self.SetPosition3d(i,self.r)
         self.SetVelocity3d(i,self.v)
         
-       # print(self.r)
-        
-        # Euler method
+
         self.r += self.dt * self.v
         self.v += self.dt * self.a
     

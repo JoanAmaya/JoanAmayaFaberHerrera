@@ -163,8 +163,3 @@ Writer = anim.writers['ffmpeg']
 writer_ = Writer(fps=60, metadata=dict(artist='JoanFaber'))
 Animation.save('Gas3d.mp4', writer=writer_)
  
-def RemoveParticles(Particles):
-    print('--- Deleting Particles---')
-    for i in range(len(Particles)):
-        if len(Particles) > 0:
-            del Particles[-1]
